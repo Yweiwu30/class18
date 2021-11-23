@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+    <meta charset="utf-8">
+    <title>?</title>
+    <style>
+        body{background: linear-gradient(#FFFFFF #99FFFF);}
+    </style>
+</head>
+
+<body>
+    <div id="Top"></div>
+    <h3>Random Picture</h3>
+    <p>version alpha-0.3</p>
+    <p>出什么图看运气</p>
+    <p>点击按钮后图片需要加载，所以需要等一会</p>
+    <script>
+        function changeImageP() {
+            image_e = document.getElementById('image');
+            image_e.src = "http://shengapi.cn/images/acg_pzt.php?" + Math.random();
+        }
+
+        function changeImageY() {
+            image_e = document.getElementById('image');
+            image_e.src = "http://shengapi.cn/images/yuansheng_gqt.php?" + Math.random();
+        }
+
+        function changeImageW() {
+            image_e = document.getElementById('image');
+            image_e.src = "http://shengapi.cn/api/image/peacg.php?" + Math.random();
+        }
+
+        function changeImageA() {
+            image_e = document.getElementById('image');
+            image_e.src = "http://shengapi.cn/api/image/acg.php?" + Math.random();
+        }
+
+        function changeImageB() {
+            image_e = document.getElementById('image');
+            image_e.src = "https://api.dujin.org/bing/1920.php";
+        }
+
+        function changeImageC() {
+            image_e = document.getElementById('image');
+            image_e.src = "https://acg.toubiec.cn/random.php?" + Math.random();
+        }
+
+        function changeImageT() {
+            image_e = document.getElementById('image');
+            image_e.src = "https://api.r10086.com/%E6%98%8E%E6%97%A5%E6%96%B9%E8%88%9F1.php?" + Math.random();
+        }
+
+        function changeImageM() {
+            image_e = document.getElementById('image');
+            image_e.src = "https://api.r10086.com/%E7%8C%AB%E5%A8%981.php?" + Math.random();
+        }
+
+        function changeImageD() {
+            image_e = document.getElementById('image');
+            image_e.src = "https://api.r10086.com/%E4%B8%9C%E6%96%B9project1.php?" + Math.random();
+        }
+
+        function more() {
+            window.alert('你是故意找猹是不是，你要不要吧');
+        }
+
+        function save() {
+            window.alert("右键复制图片（其他选项输出的结果是另一个随机的图片，api原因导致无法直接保存）");
+        }
+
+        function saveA() {
+            window.alert("不做，懒了");
+        }
+
+        function onTopClick() {
+            window.location.hash = "#Email";
+        }
+
+        function back() {
+            window.location.hash = "#Top";
+        }
+    </script>
+    <button type="button" onclick="saveA()">下载能下载的</button>
+    <button type="button" onclick="location.reload();">刷新</button>
+    <button type="button" onclick="save()">保存</button>
+    <button type="button" onclick="onTopClick()">问题反馈</button>
+    <button type="button" onclick="more()">更多</button>
+    <br/>
+    <hr/>
+    <button type="button" onclick="changeImageP()">Pixiv（默认）</button>
+    <button type="button" onclick="changeImageY()">接口1</button>
+    <button type="button" onclick="changeImageW()">接口2</button>
+    <button type="button" onclick="changeImageA()">接口3</button>
+    <button type="button" onclick="changeImageC()">接口4</button>
+    <button type="button" onclick="changeImageT()">接口5</button>
+    <button type="button" onclick="changeImageM()">接口6</button>
+    <button type="button" onclick="changeImageD()">接口7</button>
+    <button type="button" onclick="changeImageB()">bing每日一图</button>
+    <br/>
+    <img id="image" src="http://shengapi.cn/images/acg_pzt.php" width="500" alt="看来出现了问题。如果之前的图片正常，请尝试刷新图片；如果该文字多次出现，请检查你的网络，或尝试使用其他浏览器" />
+    <noscript>哦不！我想你看不到这些图片了！请检查浏览器是否禁用/不支持JavaScript，并尝试换浏览器</noscript>
+    <!--当场去世-->
+    <br/><br/><br/>
+    <p>网页编写: NAS</p>
+    <p>API: 2657595205</p>
+    <br/><br/><br/>
+    <p>好听的</p>
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="https://music.163.com/outchain/player?type=2&id=1361598360&auto=1&height=66"></iframe>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <p>有任何问题？请反馈给我们！</p>
+    <form action="mailto:2046360988@qq.com" method="post" enctype="text/plain">
+        昵称：<br/>
+        <input type="text" name="name" value="" placeholder="输入你的用户名"><br/> 邮箱：
+        <br/>
+        <input type="text" name="mail" value="" placeholder="例：example@nope.com"><br/> 反馈：
+        <br/>
+        <input type="text" name="comment" value="" placeholder="输入你的反馈" size="50"><br/><br/>
+        <input type="submit" value="发送">
+        <input type="reset" value="重置">
+    </form>
+    <br/>
+    <div id="Email"></div>
+    <form name="input" action="" method="get">
+        写些什么：<input type="text" name="你写了">
+        <input type="submit" value="没有用的提交按钮">
+    </form>
+    <br/>
+    <button type="button" onclick="back()">回到顶部</button>
+</body>
+</html>
