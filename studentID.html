@@ -141,7 +141,7 @@ body {
 	var x, text, a;
 	x = document.getElementById("inputer").value;
 	
-	if (isNaN(x) || x < 1 || x > 42) {
+	if ((isNaN(x) || x < 1 || x > 42) && x != 114514) {
 		text = "你输入的学号有误！";
 	} else {
 		a = Number(x);
@@ -313,6 +313,10 @@ body {
 			case 42:
 			text="郑佳乐";
 			break;
+			
+			case 114514:
+			text="田所浩二";
+			break;
 
 			default:
 			text="恭喜，你触发了一个bug！我修不了它！ヽ(*￣▽￣*)ノ";
@@ -325,10 +329,7 @@ body {
 	var x, text;
 	x = document.getElementById("inputer").value;
 	
-	text = "Str";
-	document.getElementById("result").innerHTML=text;
-	
-	switch (a) {
+	switch (x) {
 		case "陈铭":
 		text="1";
 		break;
@@ -496,10 +497,20 @@ body {
 		case "郑佳乐":
 		text="42";
 		break;
-
+		
+		case "大饼":
+		text="22";
+		break;
+		
+		case "田所浩二":
+		text="114514";
+		break;
+		
 		default:
 		text="没有找到对应学号，请检查人名输入是否有误";
 		}
+	
+	document.getElementById("result").innerHTML=text;
   }
   </script>
  </head>
