@@ -1,2 +1,3 @@
-# Main Page
-This is the main page with a tool list.
+# Hello!
+Welcome to Class 18 Grade 8!
+I hope you can enjoy it :)
