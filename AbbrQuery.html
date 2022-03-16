@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>金中河西-18班：学号查询</title>
+  <style type="text/css">
+   
+body { 
+  font:normal 14px Tahoma, Simsun; 
+  margin:0; padding:25px 0 0; 
+  vertical-align:baseline; 
+  background:#fff; 
+  } 
+  h1 { 
+  font:bold 26px "微软雅黑", tahoma; 
+  margin:0 0 10px; 
+  } 
+  a { 
+  color:#009e9e; 
+  } 
+  a:hover { 
+  color:#f54; 
+  } 
+  .header, .links, .footer { 
+  width:700px; 
+  margin:15px auto; 
+  padding:2px; 
+  text-align:center; 
+  } 
+  .search { 
+  width:700px; 
+  margin:15px auto; 
+  padding:8px 4px; 
+  text-align:center; 
+  background:#f8f8f8; 
+  border:2px solid #f2f2f2; 
+  } 
+  .search form { 
+  width:485px; 
+  margin:0 auto; 
+  } 
+  .i { 
+  font-size:16px; 
+  font-family:Tahoma; 
+  width:360px; 
+  height:24px; 
+  line-height:24px; 
+  padding:3px 6px; 
+  margin-right:2px; 
+  background:#fff url no-repeat; 
+  border:1px solid #b6b6b6; 
+  border-color:#7b7b7b #b6b6b6 #b6b6b6 #7b7b7b; 
+  display:inline-block; 
+  } 
+  .btn_wr { 
+  width:97px; 
+  height:34px; 
+  vertical-align:top; 
+  padding-top:1px; 
+  background:url no-repeat -202px bottom; 
+  display:inline-block; 
+  } 
+  .btn { 
+  font:normal 14px Tahoma; 
+  width:95px; 
+  height:32px; 
+  padding:0; 
+  background:#ddd url no-repeat 0 -35px; 
+  cursor:pointer; 
+  border:0; 
+  } 
+  .btn_h { 
+  background-position:-100px -35px; 
+  } 
+  .description { 
+  font-size:12px; 
+  color:#888; 
+  margin:0; 
+  } 
+  .hide { 
+  display:none; 
+  } 
+  .linkad { 
+  width:712px; 
+  margin:10px auto; 
+  } 
+  .sites { 
+  width:700px; 
+  margin:15px auto; 
+  padding:4px; 
+  background:#fff; 
+  border:2px solid #f2f2f2; 
+  } 
+  .sites dl { 
+  height:36px; 
+  line-height:36px; 
+  margin:0; 
+  display:block; 
+  } 
+  .sites dl.alt { 
+  background:#f8f8f8; 
+  border-top:1px solid #f2f2f2; 
+  border-bottom:1px solid #f2f2f2; 
+  } 
+  .sites dt, .sites dd { 
+  text-align:center; 
+  display:block; 
+  float:left; 
+  } 
+  .sites dt { 
+  width:60px; 
+  } 
+  .sites dd { 
+  width:90px; 
+  margin:0; 
+  } 
+  .footer { 
+  font-size:11px; 
+  color:#888; 
+  margin:15px auto; 
+  } 
+  .center { 
+  text-align:center; 
+  font-weight:bold; 
+  }
+  .center a { 
+  color:#ff3300; 
+  } 
+  h1{
+     font-size: 40px;
+     letter-spacing: 0px;
+     font-family: arial,helvetica;
+     sans-serif
+  }
+
+  </style>
+  <script>
+  function checkInputInt() {
+	var x, text;
+	x = document.getElementById("inputer").value;
+
+	
+	if (1==1){
+		switch (x) {
+			case "cm":
+			text="陈铭";
+			break;
+	
+			case "hyf":
+			text="胡逸峰";
+			break;
+
+			case "lby":
+			text="李炳毅";
+			break;
+
+			case "lbx":
+			text="李博贤";
+			break;
+
+			case "ly":
+			text="李阳/刘杨";
+			break;
+
+			case "lzc":
+			text="刘志成";
+			break;
+
+			case "lzy":
+			text="刘致远/陆子瑶/柳宗元";
+			break;
+
+			case "qzq":
+			text="祁子泉";
+			break;
+
+			case "tsy":
+			text="汤沈阳";
+			break;
+
+			case "wjx":
+			text="汪佳兴";
+			break;
+
+			case "wsy":
+			text="王世友";
+			break;
+
+			case "ws":
+			text="王帅";
+			break;
+
+			case "wtc":
+			text="王天诚";
+			break;
+
+			case "wyh":
+			text="吴逸辉";
+			break;
+
+			case "zb":
+			text="张斌/郑博";
+			break;
+
+			case "zjh":
+			text="张俊涵";
+			break;
+
+			case "zja":
+			text="章俊奥";
+			break;
+
+			case "zjc":
+			text="钟继超";
+			break;
+
+			case "zcy":
+			text="周宸阳";
+			break;
+
+			case "cjf":
+			text="曹靖菲";
+			break;
+
+			case "czm":
+			text="陈子敏";
+			break;
+
+			case "dsx":
+			text="丁思娴";
+			break;
+
+			case "gxy":
+			text="高筱雅";
+			break;
+
+			case "hd":
+			text="胡蝶";
+			break;
+
+			case "hym":
+			text="黄译民";
+			break;
+
+			case "lhx":
+			text="李黄鑫";
+			break;
+
+			case "lcx":
+			text="林宸熙";
+			break;
+
+			case "lxc":
+			text="娄心晨";
+			break;
+
+			case "qsy":
+			text="瞿善宜";
+			break;
+
+			case "scx":
+			text="邵宸曦";
+			break;
+
+			case "sbn":
+			text="石滨宁";
+			break;
+
+			case "tsx":
+			text="汤舒昕";
+			break;
+
+			case "xxc":
+			text="徐欣畅";
+			break;
+
+			case "yyn":
+			text="杨翊宁";
+			break;
+
+			case "yys":
+			text="杨雨珊";
+			break;
+
+			case "zxr":
+			text="张歆然";
+			break;
+
+			case "zym":
+			text="张予墨";
+			break;
+
+			case "zht":
+			text="赵焓婷";
+			break;
+
+			case "zjl":
+			text="郑佳乐";
+			break;
+			
+			case "tshe":
+			text="田所浩二";
+			break;
+			
+			case "cmmm":
+			text="https://yweiwu30.github.io/cmmm";
+			break;
+
+			default:
+			text="没有找到对应人名，请检查缩写输入是否有误";
+		}
+	}
+	document.getElementById("result").innerHTML=text;
+  }
+  
+  function checkInputStr() {
+	var x, text;
+	x = document.getElementById("inputer").value;
+	
+	switch (x) {
+		case "陈铭":
+		text="cm";
+		break;
+
+		case "胡逸峰":
+		text="hyf";
+		break;
+
+		case "李炳毅":
+		text="lby";
+		break;
+
+		case "李博贤":
+		text="lbx";
+		break;
+
+		case "李阳":
+		text="ly";
+		break;
+
+		case "刘志成":
+		text="lzc";
+		break;
+
+		case "刘致远":
+		text="lzy";
+		break;
+
+		case "祁子泉":
+		text="qzq";
+		break;
+
+		case "汤沈阳":
+		text="tsy";
+		break;
+
+		case "汪佳兴":
+		text="wjx";
+		break;
+
+		case "王世友":
+		text="wsy";
+		break;
+
+		case "王帅":
+		text="ws";
+		break;
+
+		case "王天诚":
+		text="wtc";
+		break;
+
+		case "吴逸辉":
+		text="wyh";
+		break;
+
+		case "张斌":
+		text="zb";
+		break;
+
+		case "张俊涵":
+		text="zjh";
+		break;
+
+		case "章俊奥":
+		text="zja";
+		break;
+
+		case "郑博":
+		text="zb";
+		break;
+
+		case "钟继超":
+		text="zjc";
+		break;
+
+		case "周宸阳":
+		text="zcy";
+		break;
+
+		case "曹靖菲":
+		text="cjf";
+		break;
+
+		case "陈子敏":
+		text="czm";
+		break;
+
+		case "丁思娴":
+		text="dsx";
+		break;
+
+		case "高筱雅":
+		text="gxy";
+		break;
+
+		case "胡蝶":
+		text="hd";
+		break;
+
+		case "黄译民":
+		text="hym";
+		break;
+
+		case "李黄鑫":
+		text="lhx";
+		break;
+
+		case "林宸熙":
+		text="lcx";
+		break;
+
+		case "刘杨":
+		text="ly";
+		break;
+
+		case "娄心晨":
+		text="lxc";
+		break;
+
+		case "陆子瑶":
+		text="lzy";
+		break;
+
+		case "瞿善宜":
+		text="qsy";
+		break;
+
+		case "邵宸曦":
+		text="scx";
+		break;
+
+		case "石滨宁":
+		text="sbn";
+		break;
+
+		case "汤舒昕":
+		text="tsx";
+		break;
+
+		case "徐欣畅":
+		text="xxc";
+		break;
+
+		case "杨翊宁":
+		text="yyn";
+		break;
+
+		case "杨雨珊":
+		text="yys";
+		break;
+
+		case "张歆然":
+		text="zxr";
+		break;
+
+		case "张予墨":
+		text="zym";
+		break;
+
+		case "赵焓婷":
+		text="zht";
+		break;
+
+		case "郑佳乐":
+		text="zjl";
+		break;
+		
+		case "大饼":
+		text="czm";
+		break;
+		
+		case "田所浩二":
+		text="tshe";
+		break;
+		
+		default:
+		text="没有找到对应缩写，请检查人名输入是否有误";
+		}
+	
+	document.getElementById("result").innerHTML=text;
+  }
+  </script>
+ </head>
+ <body>
+  <div class="header">
+   <h1>缩写查询</h1>
+  </div>
+  <div class="footer">
+   <a href="https://yweiwu30.github.io/class18" target="_self">返回主页</a>
+  </div>
+  <div class="search">
+   <input type="text" class="i" name="word" size="10" autofocus id="inputer" placeholder="输入学号或姓名" autocomplete="on"/>
+   <button type="button" class="btn" onclick="checkInputInt()">缩写→姓名</button>
+   <button type="button" class="btn" onclick="checkInputStr()">姓名→缩写</button>
+   <!-- <input type="submit" class="btn" value="查询"/>-->
+   <p id="result">查询结果将会在这里显示……</p>
+  </div>
+ </body>
+</html>
