@@ -13,5 +13,5 @@ I hope you can enjoy it :)
 - v1.2 2022-03-16  
 &emsp;Add abbreviation query function.
 
-- v1.2.1 2022-03-17
+- v1.2.1 2022-03-17  
 &emsp;Add more abbr in abbreviation query function.
