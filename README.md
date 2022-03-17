@@ -14,4 +14,6 @@ I hope you can enjoy it :)
 &emsp;Add abbreviation query function.
 
 - v1.2.1 2022-03-17  
-&emsp;Add more abbr in abbreviation query function.
+&emsp;Add more abbr in abbreviation query function.  
+&emsp;Modify the page Jump method. It can now be used offline.
+
